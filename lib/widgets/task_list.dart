@@ -50,7 +50,10 @@ class TaskList extends StatelessWidget {
                   task.content,
                   style: TextStyle(
                     decoration: task.done ? TextDecoration.lineThrough : null,
-                    color: Colors.white
+                    color: Colors.white,
+                    decorationColor: Colors.white,
+                    decorationThickness: task.done? 2.5 : null,
+                    decorationStyle: TextDecorationStyle.solid
                   ),
                 ),
                 trailing: Icon(
